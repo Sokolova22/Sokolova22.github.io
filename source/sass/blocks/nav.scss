@@ -1,0 +1,141 @@
+.nav {
+  margin-top: 20px;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: flex;
+    width: fit-content;
+  }
+}
+
+.nav__list {
+  padding-bottom: 67px;
+  list-style: none;
+  order: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.nav__item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  padding: 5px 0;
+  opacity: 0.7;
+  color: $color-default-white;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    outline: none;
+    opacity: 1;
+  }
+}
+
+
+.nav__sub-menu {
+  position: relative;
+  color: currentColor;
+  border: none;
+  background-color: transparent;
+  text-transform: inherit;
+
+  padding: 0 22px 0 0;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -22px;
+    margin: auto 0;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/sprite/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(360deg);
+  }
+
+  &--open {
+    &::after {
+
+      transform: rotate(180deg);
+    }
+  }
+}
+
+
+.nav__sub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__sub-link {
+  color: $color-default-white;
+}
+
+.nav__toggle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 134px;
+  height: 54px;
+  padding: 4px 4px 4px 20px;
+  border: 1px solid $color-secondary-cerulean-blue;
+  border-radius: 30px;
+  background-color: $color-default-white;
+
+
+  span {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    color: $color-secondary-cerulean-blue;
+  }
+}
+
+.nav__toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-secondary-cerulean-blue;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/sprite/menu.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

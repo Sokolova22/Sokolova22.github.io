@@ -1,0 +1,175 @@
+.accordion {
+  display: grid;
+  gap: 10px;
+  width: 1028px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.accordion__element {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid $color-secondary-cerulean-blue;
+}
+
+.accordion__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 39px 40px;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  text-align: start;
+  cursor: pointer;
+  color: $color-secondary-cerulean-blue;
+  background-color: transparent;
+
+  @include vp-1199 {
+    padding: 30px 30px 29px;
+  }
+
+  @include vp-767 {
+    padding: 19px 15px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/sprite/icon-plus.svg");
+
+    @include vp-1199 {
+      top: 41px;
+      right: 41px;
+    }
+
+    @include vp-767 {
+      top: 41%;
+      right: 26px;
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+    outline: none;
+
+    &::after {
+      background-image: url("../img/sprite/icon-plus-hf.svg");
+    }
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    outline: none;
+
+    &::after {
+      background-image: url("../img/sprite/icon-plus-active.svg");
+    }
+  }
+
+  &:disabled {
+    &::after {
+      background-image: url("../img/sprite/icon-plus-disabled.svg");
+    }
+  }
+
+  &--04,
+  &--05 {
+    padding: 31px 40px;
+  }
+
+  span {
+    @include heading-h4;
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    max-width: 635px;
+    min-height: 40px;
+
+    @include vp-1199 {
+      max-width: 78%;
+    }
+
+    @include vp-767 {
+      max-width: 72.3%;
+    }
+  }
+}
+
+.accordion__element.is-active {
+
+  background-color: $color-secondary-cerulean-blue;
+  color: $color-secondary-alabaster;
+
+  &:active {
+    background-color: $color-endeavour;
+    outline: none;
+  }
+
+  .accordion__button {
+    padding-bottom: 13px;
+    background-color: $color-secondary-cerulean-blue;
+    color: $color-secondary-alabaster;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 40px;
+      right: 40px;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/sprite/icon-minus.svg");
+    }
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+
+      &::after {
+        background-image: url("../img/sprite/icon-minus-hf.svg");
+      }
+    }
+
+    &:active {
+      background-color: $color-endeavour;
+      outline: none;
+
+      &::after {
+        background-image: url("../img/sprite/icon-minus-active.svg");
+      }
+    }
+  }
+}
+
+.accordion__content {
+
+  padding-left: 40px;
+
+  p {
+    @include text-regular;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 33px;
+    max-width: 637px;
+    color: $color-secondary-alabaster;
+
+    @include vp-1199 {
+      max-width: 92%;
+    }
+
+    @include vp-767 {
+      max-width: 100%;
+    }
+  }
+}

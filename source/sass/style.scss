@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -23,6 +23,28 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/nav-header";
+@import "blocks/hero";
+@import "blocks/link-button";
+@import "blocks/about";
+@import "blocks/programs";
+@import "blocks/swiper-scrollbar";
+@import "blocks/how-to-go";
+@import "blocks/news";
+@import "blocks/faq";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/feedback-form";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/accordion";
+@import "blocks/data-accordion";
+@import "blocks/modal-form";
+
+// ---------------------------------
 
 // ---------------------------------
 

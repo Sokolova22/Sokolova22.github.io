@@ -1,26 +1,42 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
+  padding: 3px 3px 3px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  user-select: none;
+  outline: none;
 
-  color: $color-default-white;
+  color: $color-secondary-cerulean-blue;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: $color-default-white;
+  border: 1px solid $color-secondary-cerulean-blue;
   cursor: pointer;
 
-  transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
+  transition: all $trans-default;
 
   &:disabled {
-    opacity: 0.5;
-
+    color: $color-mischka;
+    border: 1px solid $color-mischka;
     pointer-events: none;
-  }
 
-  @include hover-focus {
-    opacity: 0.8;
+    & .btn__wrapper {
+      background-color: $color-mischka;
+    }
   }
+}
+
+.btn__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $color-secondary-cerulean-blue;
+}
+
+.btn__wrapper svg {
+  stroke: $color-default-white;
 }

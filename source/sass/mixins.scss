@@ -1,8 +1,9 @@
-@mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    @content;
-  }
-}
+// @mixin retina {
+//   @media (min-resolution: $retina-dpi),
+//   (min-resolution: $retina-dppx) {
+//     @content;
+//   }
+// }
 
 @mixin hover {
   @media (hover: hover) {
@@ -56,6 +57,12 @@
   }
 }
 
+@mixin vp-1199 {
+  @media (max-width: ($vp-1200 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-1023 {
   @media (max-width: ($vp-1024 - 1px)) {
     @content;
@@ -71,6 +78,222 @@
 @mixin vp-374 {
   @media (max-width: ($vp-375 - 1px)) {
     @content;
+  }
+}
+
+// Heading
+
+@mixin heading-h1 {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+
+  @include vp-1199 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@mixin heading-h2 {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 50px;
+
+  @include vp-1199 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@mixin heading-h3 {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+
+  @include vp-1199 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@mixin heading-h4 {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+
+  @include vp-1199 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@mixin heading-h5 {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin heading-h6 {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+//Text
+@mixin text-big {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+
+  @include vp-1199 {
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@mixin text-medium {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@mixin text-regular {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+
+  @include vp-1199 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+@mixin text-small {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin text-xsmall {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@mixin text-xxsmall {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+@mixin captions {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+@mixin button {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
   }
 }
 

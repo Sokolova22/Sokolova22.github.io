@@ -1,0 +1,35 @@
+.faq {
+  background-color: $color-secondary-alabaster;
+}
+
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 125px 206px 0;
+
+  @include vp-1199 {
+    padding: 100px 45px 0;
+  }
+
+  @include vp-767 {
+    padding: 67px 15px 0;
+  }
+
+  h2 {
+    @include heading-h2;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 65px;
+    color: $color-secondary-cerulean-blue;
+
+    @include vp-1199 {
+      margin-bottom: 53px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 36px;
+    }
+  }
+}

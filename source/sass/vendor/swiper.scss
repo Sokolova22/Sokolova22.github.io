@@ -1,3 +1,4 @@
+/* stylelint-disable */
 /**
  * Swiper 8.4.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -280,9 +281,9 @@
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 10px;
-  left: 0;
-  width: 100%;
+  // bottom: 10px;
+  // left: 0;
+  // width: 100%;
 }
 /* Bullets */
 .swiper-pagination-bullets-dynamic {
@@ -429,7 +430,7 @@ button.swiper-pagination-bullet {
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   position: absolute;
-  left: 1%;
+  left: 0;
   bottom: 3px;
   z-index: 50;
   height: 5px;
