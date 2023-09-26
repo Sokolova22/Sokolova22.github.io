@@ -2913,7 +2913,7 @@ button,
 .programs {
   margin: 0 auto;
   position: relative;
-  padding: 125px 100px 120px;
+  padding: 125px 100px 118px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2945,7 +2945,7 @@ button,
   position: relative;
   max-width: 1240px;
   min-height: 482px;
-  padding: 46px 0 62px;
+  padding: 46px 0 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2980,6 +2980,9 @@ button,
   font-size: 47px;
   padding: 0;
   margin: 0;
+  margin-right: auto;
+  margin-top: -45px;
+  margin-bottom: 44px;
 }
 
 .programs__slide {
@@ -3106,7 +3109,7 @@ button,
   outline-offset: -2px;
   position: relative;
   height: 22px;
-  top: 59px;
+  top: 40px;
 }
 
 .programs__button {
@@ -5253,7 +5256,7 @@ button,
   }
 
   .programs {
-    padding: 104px 0 100px;
+    padding: 104px 0 98px;
   }
 
   .programs__wrapper {
@@ -5284,6 +5287,7 @@ button,
 
   .programs__swiper h2 {
     font-size: 32px;
+    margin-bottom: 42px;
   }
 
   .programs__slide img {
@@ -5318,7 +5322,7 @@ button,
   }
 
   .programs__button-box {
-    top: 62px;
+    top: 38px;
     right: 45px;
   }
 
@@ -6172,6 +6176,7 @@ button,
   .programs__swiper h2 {
     font-size: 19px;
     margin-right: auto;
+    margin-top: 0;
     margin-bottom: 31px;
   }
 
