@@ -6932,6 +6932,12 @@ button,
   }
 }
 
+@media (max-width: 1250px) and (min-width: 1200px) {
+  .faq__wrapper {
+    padding: 125px 100px 0;
+  }
+}
+
 @media (hover: hover) {
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
     outline: none;

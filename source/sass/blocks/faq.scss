@@ -8,6 +8,10 @@
   justify-content: center;
   padding: 125px 206px 0;
 
+  @media(max-width: 1250px) and (min-width: 1200px) {
+    padding: 125px 100px 0;
+  }
+
   @include vp-1199 {
     padding: 90px 45px 0;
   }
