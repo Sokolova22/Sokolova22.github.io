@@ -39,8 +39,9 @@
     margin: auto 0;
     width: 10px;
     height: 10px;
-    background-image: url("../img/sprite/arrow.svg");
+    background-image: url("../img/sprite/arrow-white.svg");
   }
+
 
   &:hover,
   &:focus-visible {
@@ -53,7 +54,7 @@
     }
 
     &::after {
-      background-image: url("../img/sprite/arrow-blue.svg");
+      background-image: url("../img/sprite/arrow.svg");
       transform: rotate(45deg);
     }
   }
