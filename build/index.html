@@ -87,7 +87,16 @@
                 <div class="hero__slider-info">
                   <p>Получите незаменимый опыт работы в&nbsp;ведущих израильских компаниях и&nbsp;государственных
                     организациях.</p>
-                  <a href="#" class="link-button" aria-label="Ссылка на страницу.">Подробнее</a>
+                  <div class="hero__slider-btn-wrapper">
+                    <a class="hero__slider-btn btn" href="#">
+                      <span class="hero__slider-btn-text">Подробнее</span>
+                      <span class="hero__icon-wrapper btn__wrapper">
+                        <svg width="10" height="10">
+                          <use href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -136,7 +145,7 @@
               </div>
               <div class="hero__slider-content hero__slider-content--third">
                 <div class="hero__swiper-pagination"></div>
-                <h2>Глобальный профессиональный опыт обучения за&nbsp;рубежом</h2>
+                <h2>Глобальный профессиональный <br> опыт обучения за&nbsp;рубежом</h2>
                 <div class="hero__slider-info hero__slider-info--third">
                   <p>Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая
                     настоящий израильский стиль жизни!</p>
@@ -192,9 +201,9 @@
       </section>
       <section class="programs" id="programs">
         <div class="programs__wrapper">
-          <h2>Программы</h2>
           <a href="#" class="link-button link-button--programs" aria-label="Ссылка на страницу.">Все программы</a>
           <div class="programs__swiper swiper">
+            <h2>Программы</h2>
             <div class="programs__swiper-wrapper swiper-wrapper">
               <div class="programs__slide swiper-slide">
                 <picture>
@@ -272,44 +281,6 @@
                   </div>
                 </div>
               </div>
-              <div class="programs__slide swiper-slide">
-                <picture>
-                  <source media="(max-width: 767px)" type="image/webp" srcset="./img/programs/programs-2-mobile.webp 1x, ./img/programs/programs-2-mobile@2x.webp 2x" width="290" height="292">
-                  <source media="(max-width: 1199px)" type="image/webp" srcset="./img/programs/programs-2-tablet.webp 1x, ./img/programs/programs-2-tablet@2x.webp 2x" width="386" height="292">
-                  <source media="(min-width: 1200px)" type="image/webp" srcset="./img/programs/programs-2-desktop.webp 1x, ./img/programs/programs-2-desktop@2x.webp 2x" width="660" height="500">
-                  <source media="(max-width: 767px)" srcset="./img/programs/programs-2-mobile.jpg 1x, ./img/programs/programs-2-mobile@2x.jpg 2x" width="309" height="400">
-                  <source media="(max-width: 1199px)" srcset="./img/programs/programs-2-tablet.jpg 1x, ./img/programs/programs-2-tablet@2x.jpg 2x" width="324" height="420">
-                  <img src="./img/programs/programs-2-desktop.jpg" srcset="./img/programs/programs-2-desktop@2x.jpg 2x" width="392" height="420" alt="Фото волонтёра." loading="lazy">
-                </picture>
-                <div class="programs__container">
-                  <div class="programs__container-wrapper">
-                    <h3>Волонтёрство</h3>
-                    <div class="programs__description">
-                      <p>Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
-                      <a class="link-button" href="#" aria-label="Ссылка на страницу."></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="programs__slide swiper-slide">
-                <picture>
-                  <source media="(max-width: 767px)" type="image/webp" srcset="./img/programs/programs-3-mobile.webp 1x, ./img/programs/programs-3-mobile@2x.webp 2x" width="290" height="292">
-                  <source media="(max-width: 1199px)" type="image/webp" srcset="./img/programs/programs-3-tablet.webp 1x, ./img/programs/programs-3-tablet@2x.webp 2x" width="386" height="292">
-                  <source media="(min-width: 1200px)" type="image/webp" srcset="./img/programs/programs-3-desktop.webp 1x, ./img/programs/programs-3-desktop@2x.webp 2x" width="660" height="500">
-                  <source media="(max-width: 767px)" srcset="./img/programs/programs-3-mobile.jpg 1x, ./img/programs/programs-3-mobile@2x.jpg 2x" width="309" height="400">
-                  <source media="(max-width: 1199px)" srcset="./img/programs/programs-3-tablet.jpg 1x, ./img/programs/programs-3-tablet@2x.jpg 2x" width="324" height="420">
-                  <img src="./img/programs/programs-3-desktop.jpg" srcset="./img/programs/programs-3-desktop@2x.jpg 2x" width="392" height="420" alt="Фото мужчины в очках." loading="lazy">
-                </picture>
-                <div class="programs__container">
-                  <div class="programs__container-wrapper">
-                    <h3>Учёба</h3>
-                    <div class="programs__description">
-                      <p>Получите образование и&nbsp;измените свое будущее.</p>
-                      <a class="link-button" href="#" aria-label="Ссылка на страницу."></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="programs__button-box">
               <div class="programs__button programs__button--prev swiper-button-prev"></div>
@@ -375,7 +346,7 @@
           </div>
           <div class="news__swiper swiper">
             <div class="news__swiper-wrapper swiper-wrapper">
-              <div class="news__slide swiper-slide">
+              <div class="news__slide swiper-slide news__slide--first">
                 <picture>
                   <source media="(max-width: 767px)" type="image/webp" srcset="./img/news/slide-1-tablet.webp 1x, ./img/news/slide-1-tablet@2x.webp 2x" width="290" height="330">
                   <source media="(max-width: 1199px)" type="image/webp" srcset="./img/news/slide-1-tablet.webp 1x, ./img/news/slide-1-tablet@2x.webp 2x" width="324" height="350">
@@ -501,6 +472,42 @@
                   </div>
                 </div>
               </div>
+              <div class="news__slide swiper-slide">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp" srcset="./img/news/slide-4-tablet.webp 1x, ./img/news/slide-4-tablet@2x.webp 2x" width="290" height="330">
+                  <source media="(max-width: 1199px)" type="image/webp" srcset="./img/news/slide-4-tablet.webp 1x, ./img/news/slide-4-tablet@2x.webp 2x" width="324" height="350">
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="./img/news/slide-4-desktop.webp 1x, ./img/news/slide-4-desktop@2x.webp 2x" width="286" height="400">
+                  <source media="(max-width: 767px)" srcset="./img/news/slide-4-tablet.jpg 1x, ./img/news/slide-4-tablet@2x.jpg 2x" width="290" height="330">
+                  <source media="(max-width: 1199px)" srcset="./img/news/slide-4-tablet.jpg 1x, ./img/news/slide-4-tablet@2x.jpg 2x" width="324" height="350">
+                  <img src="./img/news/slide-4-desktop.jpg" srcset="./img/news/slide-4-desktop@2x.jpg 2x" width="286" height="400" alt="Фото мужчины с разлетающимся тальком." loading="lazy">
+                </picture>
+                <div class="news__container">
+                  <span>10/03/2023</span>
+                  <h3>Построй свою карьеру</h3>
+                  <div class="news__text">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <a class="link-button link-button--news" href="#" aria-label="Ссылка на страницу."></a>
+                  </div>
+                </div>
+              </div>
+              <div class="news__slide swiper-slide">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp" srcset="./img/news/slide-4-tablet.webp 1x, ./img/news/slide-4-tablet@2x.webp 2x" width="290" height="330">
+                  <source media="(max-width: 1199px)" type="image/webp" srcset="./img/news/slide-4-tablet.webp 1x, ./img/news/slide-4-tablet@2x.webp 2x" width="324" height="350">
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="./img/news/slide-4-desktop.webp 1x, ./img/news/slide-4-desktop@2x.webp 2x" width="286" height="400">
+                  <source media="(max-width: 767px)" srcset="./img/news/slide-4-tablet.jpg 1x, ./img/news/slide-4-tablet@2x.jpg 2x" width="290" height="330">
+                  <source media="(max-width: 1199px)" srcset="./img/news/slide-4-tablet.jpg 1x, ./img/news/slide-4-tablet@2x.jpg 2x" width="324" height="350">
+                  <img src="./img/news/slide-4-desktop.jpg" srcset="./img/news/slide-4-desktop@2x.jpg 2x" width="286" height="400" alt="Фото мужчины с разлетающимся тальком." loading="lazy">
+                </picture>
+                <div class="news__container">
+                  <span>10/03/2023</span>
+                  <h3>Построй свою карьеру</h3>
+                  <div class="news__text">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <a class="link-button link-button--news" href="#" aria-label="Ссылка на страницу."></a>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="news__pagination swiper-pagination"></div>
             <div class="news__button news__button--prev swiper-button-prev"></div>
@@ -532,7 +539,7 @@
               </div>
             </div>
             <div class="accordion__element is-active" data-accordion="element">
-              <button class="accordion__button" type="button" data-accordion="button" aria-label="Открыть и закрыть вкладку.">
+              <button class="accordion__button accordion__button--03" type="button" data-accordion="button" aria-label="Открыть и закрыть вкладку.">
                 <span>Как определяется стоимость программы?</span>
               </button>
               <div class="accordion__content" data-accordion="content">
@@ -688,30 +695,6 @@
                   <h6>Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один из&nbsp;самых незабываемых опытов в&nbsp;жизни!</h6>
                   <p>Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы
                     действительно отличает её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне возможность.</p>
-                </div>
-              </div>
-              <div class="feedback__slide swiper-slide">
-                <div class="feedback__container">
-                  <div class="feedback__user">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/avatars/avatar-2.webp 1x, ./img/avatars/avatar-2@2x.webp 2x" width="60" height="60">
-                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/avatars/avatar-2.webp 1x, ./img/avatars/avatar-2@2x.webp 2x" width="90" height="90">
-                      <source media="(max-width: 767px)" srcset="./img/avatars/avatar-2.png 1x, ./img/avatars/avatar-2@2x.png 2x" width="60" height="60">
-                      <img src="./img/avatars/avatar-2.png" srcset="./img/avatars/avatar-2@2x.png 2x" width="90" height="90" alt="Фото пользователя." loading="lazy">
-                    </picture>
-                    <span>Давид Иммервар</span>
-                  </div>
-                  <dl class="feedback__details">
-                    <dt>Программа</dt>
-                    <dd>Volunteer Chance</dd>
-                    <dt>Дата</dt>
-                    <dd>Лето 2022</dd>
-                  </dl>
-                </div>
-                <div class="feedback__content">
-                  <h6>Благодаря опыту стажировки я&nbsp;узнал так много нового о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</h6>
-                  <p>Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я&nbsp;бы очень рекомендовал эту волонтерскую программу всем, кто ищет значимый
-                    и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
                 </div>
               </div>
             </div>

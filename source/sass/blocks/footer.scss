@@ -15,7 +15,7 @@
   }
 
   @include vp-767 {
-    padding: 29px 15px 40px;
+    padding: 29px 0 40px;
     max-width: 290px;
     justify-content: center;
   }
@@ -26,8 +26,15 @@
   height: 52px;
   margin-right: 52px;
 
+  @include vp-1199 {
+    margin-right: 100px;
+  }
+
   @include vp-767 {
+    outline: 2px solid rgba(255, 0, 0, 0.8);
+    outline-offset: -2px;
     margin: 0 auto;
+    margin-bottom: 12px;
   }
 }
 
@@ -35,6 +42,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 25px;
+
+  @include vp-1199 {
+    margin-bottom: 18px;
+  }
 
   @include vp-767 {
     margin: 0 auto;
@@ -55,7 +66,8 @@
   }
 
   @include vp-767 {
-    gap: 15px;
+    column-gap: 32px;
+    row-gap: 6px;
     justify-content: center;
   }
 }
@@ -78,11 +90,19 @@
 
   @include vp-1199 {
     justify-content: flex-start;
+    flex-basis: 50%;
+
+    @include text-xxsmall;
+    font-size: 10px;
+    letter-spacing: 0em;
+    margin-top: 1px;
   }
 
   @include vp-767 {
     justify-content: center;
+    margin-top: 17px;
     margin-bottom: 15px;
+    flex-basis: 100%;
   }
 
   p {
@@ -92,9 +112,11 @@
 
     @include vp-1199 {
       flex-basis: 100%;
+      order: 2;
+      opacity: 0.6;
     }
 
-    @include vp-1199 {
+    @include vp-767 {
       flex-basis: auto;
     }
   }
@@ -103,5 +125,13 @@
     color: $color-primary-charcoal;
     text-decoration: 1px underline;
     text-underline-offset: 4px;
+
+    @include vp-1199 {
+      margin-bottom: 5px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 8px;
+    }
   }
 }

@@ -10,26 +10,14 @@
   background-color: $color-secondary-alabaster;
 
   @include vp-1199 {
-    padding: 100px 0;
+    padding: 104px 0 100px;
   }
 
   @include vp-767 {
-    padding: 71px 0 67px;
+    padding: 70px 0 67px;
   }
 
-  h2 {
-    @include heading-h2;
 
-    color: $color-secondary-cerulean-blue;
-    font-size: 47px;
-    padding: 0;
-    margin: 0;
-
-    @include vp-1199 {
-      font-size: 32px;
-      line-height: 147%;
-    }
-  }
 }
 
 .programs__wrapper {
@@ -44,42 +32,48 @@
   }
 
   @include vp-767 {
-    padding: 0 4.69%;
+    padding: 0 4.69% 50px;
   }
 
   .link-button--programs {
     position: absolute;
-    top: 0;
+    top: -3px;
     right: 0;
 
     @include vp-1199 {
-      top: 102px;
+      top: -4px;
+      // top: 102px;
       right: 45px;
     }
 
     @include vp-767 {
-      top: 600px;
+      top: 481px;
       right: 0;
-      left: 0;
-      padding: 0 15px;
+      left: 15px;
+      padding: 0 15px 0 30px;
+      min-width: 203px;
+      // width: 100%;
     }
   }
 }
 
 .programs__swiper {
+
   position: relative;
   max-width: 1240px;
   min-height: 482px;
   padding: 46px 0 62px;
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
 
   @include vp-1199 {
-    padding-top: 40px;
+    padding-top: 43px;
   }
 
   @include vp-767 {
-    padding: 33px 0 30px;
+    padding: 0 0 0px;
+    min-height: 450px;
   }
 
   .programs__button {
@@ -119,6 +113,26 @@
   .programs__scrollbar.swiper-scrollbar {
     @media (min-width: 1200px) and (max-width: 1390px) {
       width: 91.45%;
+    }
+  }
+
+  h2 {
+    @include heading-h2;
+
+    color: $color-secondary-cerulean-blue;
+    font-size: 47px;
+    padding: 0;
+    margin: 0;
+
+    @include vp-1199 {
+      font-size: 32px;
+    }
+
+    @include vp-767 {
+      font-size: 19px;
+      margin-right: auto;
+      margin-bottom: 31px;
+      // letter-spacing: 0.02em;
     }
   }
 }
@@ -313,8 +327,13 @@
   height: 22px;
   top: 59px;
 
+  @include vp-1199 {
+    top: 62px;
+    right: 45px;
+  }
   @include vp-767 {
-    top: -403px;
+    top: -432px;
+    right: 0;
   }
 }
 

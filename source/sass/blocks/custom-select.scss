@@ -63,6 +63,7 @@
     outline: none;
     cursor: pointer;
 
+
     &:disabled {
       pointer-events: none;
       opacity: 0.3;
@@ -254,7 +255,7 @@
     height: 44px;
 
     &__button {
-      min-width: 260px;
+      min-width: 248px;
       height: 44px;
     }
   }
